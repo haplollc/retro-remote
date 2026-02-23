@@ -6,6 +6,11 @@ struct Win95RemoteControlView: View {
     @State private var showingDevicePicker = false
     @State private var showNumberPad = false
     
+    // Consistent spacing values
+    private let sectionSpacing: CGFloat = 10
+    private let buttonSpacing: CGFloat = 6
+    private let groupPadding: CGFloat = 10
+    
     var body: some View {
         GeometryReader { geometry in
             ZStack {
@@ -28,19 +33,24 @@ struct Win95RemoteControlView: View {
                     
                     // Content area with beveled sunken border
                     ScrollView(showsIndicators: false) {
-                        VStack(spacing: 16) {
-                            // Power section
+                        VStack(spacing: sectionSpacing) {
+                            // Power section - centered
                             Win95GroupBox(title: "Power") {
-                                Win95Button(button: .power) {
-                                    sendCommand(.power)
+                                HStack {
+                                    Spacer()
+                                    Win95Button(button: .power) {
+                                        sendCommand(.power)
+                                    }
+                                    Spacer()
                                 }
                             }
                             
                             // Navigation section
                             Win95GroupBox(title: "Navigation") {
-                                VStack(spacing: 12) {
-                                    // Top row: Home, Menu, Back
-                                    HStack(spacing: 16) {
+                                VStack(spacing: sectionSpacing) {
+                                    // Back, Home, Menu - centered row with equal buttons
+                                    HStack(spacing: buttonSpacing) {
+                                        Spacer()
                                         Win95Button(button: .back) {
                                             sendCommand(.back)
                                         }
@@ -50,19 +60,24 @@ struct Win95RemoteControlView: View {
                                         Win95Button(button: .menu) {
                                             sendCommand(.menu)
                                         }
+                                        Spacer()
                                     }
                                     
-                                    // D-Pad
-                                    Win95DPadView { button in
-                                        sendCommand(button)
+                                    // D-Pad - centered
+                                    HStack {
+                                        Spacer()
+                                        Win95DPadView { button in
+                                            sendCommand(button)
+                                        }
+                                        Spacer()
                                     }
                                 }
                             }
                             
-                            // Volume & Channel section
-                            HStack(spacing: 12) {
+                            // Volume & Channel section - equal width columns
+                            HStack(spacing: sectionSpacing) {
                                 Win95GroupBox(title: "Volume") {
-                                    VStack(spacing: 8) {
+                                    VStack(spacing: buttonSpacing) {
                                         Win95Button(button: .volumeUp) {
                                             sendCommand(.volumeUp)
                                         }
@@ -73,25 +88,32 @@ struct Win95RemoteControlView: View {
                                             sendCommand(.volumeDown)
                                         }
                                     }
+                                    .frame(maxWidth: .infinity)
                                 }
+                                .frame(maxWidth: .infinity)
                                 
                                 Win95GroupBox(title: "Channel") {
-                                    VStack(spacing: 8) {
+                                    VStack(spacing: buttonSpacing) {
                                         Win95Button(button: .channelUp) {
                                             sendCommand(.channelUp)
                                         }
-                                        Spacer()
-                                            .frame(height: 46)
+                                        Win95GuideButton(isPressed: false) {
+                                            // Guide action placeholder
+                                            HapticManager.shared.lightTap()
+                                        }
                                         Win95Button(button: .channelDown) {
                                             sendCommand(.channelDown)
                                         }
                                     }
+                                    .frame(maxWidth: .infinity)
                                 }
+                                .frame(maxWidth: .infinity)
                             }
                             
-                            // Playback section
+                            // Playback section - centered row with equal buttons
                             Win95GroupBox(title: "Playback") {
-                                HStack(spacing: 8) {
+                                HStack(spacing: buttonSpacing) {
+                                    Spacer()
                                     Win95Button(button: .rewind) {
                                         sendCommand(.rewind)
                                     }
@@ -107,40 +129,51 @@ struct Win95RemoteControlView: View {
                                     Win95Button(button: .fastForward) {
                                         sendCommand(.fastForward)
                                     }
+                                    Spacer()
                                 }
                             }
                             
-                            // Number pad toggle
-                            Win95ToggleButton(
-                                title: showNumberPad ? "Hide Numbers" : "Show Numbers",
-                                isOn: showNumberPad
-                            ) {
-                                withAnimation(.none) {
-                                    showNumberPad.toggle()
+                            // Number pad toggle - centered
+                            HStack {
+                                Spacer()
+                                Win95ToggleButton(
+                                    title: showNumberPad ? "Hide Numbers" : "Show Numbers",
+                                    isOn: showNumberPad
+                                ) {
+                                    withAnimation(.none) {
+                                        showNumberPad.toggle()
+                                    }
+                                    HapticManager.shared.lightTap()
                                 }
-                                HapticManager.shared.lightTap()
+                                Spacer()
                             }
                             
                             // Number pad (if showing)
                             if showNumberPad {
                                 Win95GroupBox(title: "Numbers") {
-                                    VStack(spacing: 8) {
-                                        HStack(spacing: 8) {
+                                    VStack(spacing: buttonSpacing) {
+                                        HStack(spacing: buttonSpacing) {
+                                            Spacer()
                                             Win95Button(button: .num1) { sendCommand(.num1) }
                                             Win95Button(button: .num2) { sendCommand(.num2) }
                                             Win95Button(button: .num3) { sendCommand(.num3) }
+                                            Spacer()
                                         }
-                                        HStack(spacing: 8) {
+                                        HStack(spacing: buttonSpacing) {
+                                            Spacer()
                                             Win95Button(button: .num4) { sendCommand(.num4) }
                                             Win95Button(button: .num5) { sendCommand(.num5) }
                                             Win95Button(button: .num6) { sendCommand(.num6) }
+                                            Spacer()
                                         }
-                                        HStack(spacing: 8) {
+                                        HStack(spacing: buttonSpacing) {
+                                            Spacer()
                                             Win95Button(button: .num7) { sendCommand(.num7) }
                                             Win95Button(button: .num8) { sendCommand(.num8) }
                                             Win95Button(button: .num9) { sendCommand(.num9) }
+                                            Spacer()
                                         }
-                                        HStack(spacing: 8) {
+                                        HStack(spacing: buttonSpacing) {
                                             Spacer()
                                             Win95Button(button: .num0) { sendCommand(.num0) }
                                             Spacer()
@@ -154,7 +187,7 @@ struct Win95RemoteControlView: View {
                                 status: controlService.isConnected ? "Connected" : "Disconnected"
                             )
                         }
-                        .padding(8)
+                        .padding(groupPadding)
                     }
                     .background(Win95Theme.silver)
                     .overlay(
@@ -166,8 +199,8 @@ struct Win95RemoteControlView: View {
                 .overlay(
                     BeveledBorderView(isPressed: false, cornerRadius: 0)
                 )
-                .padding(.horizontal, 16)
-                .padding(.vertical, geometry.safeAreaInsets.top > 0 ? 8 : 20)
+                .padding(.horizontal, 12)
+                .padding(.vertical, geometry.safeAreaInsets.top > 0 ? 8 : 16)
             }
         }
         .sheet(isPresented: $showingDevicePicker) {
@@ -232,6 +265,7 @@ struct Win95MenuBar: View {
                 Text(deviceName)
                     .font(.system(size: 11, design: .monospaced))
                     .foregroundColor(.black)
+                    .lineLimit(1)
             }
             .padding(.horizontal, 8)
             .padding(.vertical, 2)
@@ -292,20 +326,21 @@ struct Win95GroupBox<Content: View>: View {
                             .stroke(Win95Theme.white, lineWidth: 1)
                             .offset(x: 1, y: 1)
                     )
-                    .padding(.top, 8)
+                    .padding(.top, 6)
                 
                 // Title label with background to break the border
                 Text(" \(title) ")
                     .font(.system(size: 11, weight: .regular, design: .monospaced))
                     .foregroundColor(.black)
                     .background(Win95Theme.silver)
-                    .padding(.leading, 10)
+                    .padding(.leading, 8)
             }
             
-            // Content
+            // Content - centered with equal padding
             content
-                .padding(12)
-                .padding(.top, 4)
+                .frame(maxWidth: .infinity)
+                .padding(.horizontal, 10)
+                .padding(.vertical, 10)
         }
     }
 }
@@ -338,11 +373,11 @@ struct Win95ToggleButton: View {
                 }
                 
                 Text(title)
-                    .font(.system(size: 12, design: .monospaced))
+                    .font(.system(size: 11, design: .monospaced))
                     .foregroundColor(.black)
             }
-            .padding(.horizontal, 12)
-            .padding(.vertical, 6)
+            .padding(.horizontal, 10)
+            .padding(.vertical, 5)
             .background(Win95Theme.silver)
             .overlay(
                 BeveledBorderView(isPressed: isPressed, cornerRadius: 0)

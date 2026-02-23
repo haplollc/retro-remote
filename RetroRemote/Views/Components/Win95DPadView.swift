@@ -1,58 +1,46 @@
 import SwiftUI
 
-/// A Windows 95-style D-pad that looks like chunky plastic buttons
+/// A Windows 95-style D-pad - simplified single border, properly centered
 struct Win95DPadView: View {
     let onButtonPress: (RemoteButton) -> Void
     
+    private let buttonSize: CGFloat = Win95ButtonSizes.dpadArrowSize
+    private let okSize: CGFloat = Win95ButtonSizes.okButtonSize
+    private let spacing: CGFloat = 4
+    
     var body: some View {
-        ZStack {
-            // Sunken base plate
-            RoundedRectangle(cornerRadius: 4)
-                .fill(Win95Theme.silver)
-                .frame(width: 190, height: 190)
-                .overlay(
-                    SunkenBorderView()
-                        .padding(2)
-                )
+        // Simple sunken panel for the D-pad
+        VStack(spacing: spacing) {
+            // Up arrow
+            Win95Button(button: .up) {
+                onButtonPress(.up)
+            }
             
-            // Inner raised platform
-            RoundedRectangle(cornerRadius: 2)
-                .fill(Win95Theme.silver)
-                .frame(width: 170, height: 170)
-                .overlay(
-                    BeveledBorderView(isPressed: false, cornerRadius: 0)
-                )
-            
-            // D-pad buttons arranged in cross pattern
-            VStack(spacing: 0) {
-                // Up
-                Win95Button(button: .up) {
-                    onButtonPress(.up)
+            // Left - OK - Right row
+            HStack(spacing: spacing) {
+                Win95Button(button: .left) {
+                    onButtonPress(.left)
                 }
                 
-                HStack(spacing: 16) {
-                    // Left
-                    Win95Button(button: .left) {
-                        onButtonPress(.left)
-                    }
-                    
-                    // Center OK button
-                    Win95Button(button: .select) {
-                        onButtonPress(.select)
-                    }
-                    
-                    // Right
-                    Win95Button(button: .right) {
-                        onButtonPress(.right)
-                    }
+                Win95Button(button: .select) {
+                    onButtonPress(.select)
                 }
                 
-                // Down
-                Win95Button(button: .down) {
-                    onButtonPress(.down)
+                Win95Button(button: .right) {
+                    onButtonPress(.right)
                 }
             }
+            
+            // Down arrow
+            Win95Button(button: .down) {
+                onButtonPress(.down)
+            }
         }
+        .padding(12)
+        .background(Win95Theme.silver)
+        .overlay(
+            SunkenBorderView()
+        )
     }
 }
 
