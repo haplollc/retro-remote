@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1000001232D8F0000000001 /* RetroRemoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000002232D8F0000000001 /* RetroRemoteApp.swift */; };
+		A1000003232D8F0000000001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000004232D8F0000000001 /* ContentView.swift */; };
+		A1000005232D8F0000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1000006232D8F0000000001 /* Assets.xcassets */; };
+		A1000007232D8F0000000001 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1000008232D8F0000000001 /* Preview Assets.xcassets */; };
+		A1000009232D8F0000000001 /* TVDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000A232D8F0000000001 /* TVDevice.swift */; };
+		A100000B232D8F0000000001 /* NetworkDiscoveryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000C232D8F0000000001 /* NetworkDiscoveryService.swift */; };
+		A100000D232D8F0000000001 /* TVControlService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000E232D8F0000000001 /* TVControlService.swift */; };
+		A100000F232D8F0000000001 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000010232D8F0000000001 /* HapticManager.swift */; };
+		A1000011232D8F0000000001 /* SkeuomorphicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000012232D8F0000000001 /* SkeuomorphicButton.swift */; };
+		A1000013232D8F0000000001 /* DPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000014232D8F0000000001 /* DPadView.swift */; };
+		A1000015232D8F0000000001 /* RemoteControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000016232D8F0000000001 /* RemoteControlView.swift */; };
+		A1000017232D8F0000000001 /* DevicePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1000018232D8F0000000001 /* DevicePickerView.swift */; };
+		A1000019232D8F0000000001 /* RetroRemoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100001A232D8F0000000001 /* RetroRemoteTests.swift */; };
+		A100001B232D8F0000000001 /* RetroRemoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100001C232D8F0000000001 /* RetroRemoteUITests.swift */; };
+		A100001D232D8F0000000001 /* RetroRemoteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100001E232D8F0000000001 /* RetroRemoteUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A100001F232D8F0000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1000020232D8F0000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1000021232D8F0000000001;
+			remoteInfo = RetroRemote;
+		};
+		A1000022232D8F0000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1000020232D8F0000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1000021232D8F0000000001;
+			remoteInfo = RetroRemote;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A1000002232D8F0000000001 /* RetroRemoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroRemoteApp.swift; sourceTree = "<group>"; };
+		A1000004232D8F0000000001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A1000006232D8F0000000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1000008232D8F0000000001 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A100000A232D8F0000000001 /* TVDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVDevice.swift; sourceTree = "<group>"; };
+		A100000C232D8F0000000001 /* NetworkDiscoveryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDiscoveryService.swift; sourceTree = "<group>"; };
+		A100000E232D8F0000000001 /* TVControlService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVControlService.swift; sourceTree = "<group>"; };
+		A1000010232D8F0000000001 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		A1000012232D8F0000000001 /* SkeuomorphicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeuomorphicButton.swift; sourceTree = "<group>"; };
+		A1000014232D8F0000000001 /* DPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DPadView.swift; sourceTree = "<group>"; };
+		A1000016232D8F0000000001 /* RemoteControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlView.swift; sourceTree = "<group>"; };
+		A1000018232D8F0000000001 /* DevicePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicePickerView.swift; sourceTree = "<group>"; };
+		A100001A232D8F0000000001 /* RetroRemoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroRemoteTests.swift; sourceTree = "<group>"; };
+		A100001C232D8F0000000001 /* RetroRemoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroRemoteUITests.swift; sourceTree = "<group>"; };
+		A100001E232D8F0000000001 /* RetroRemoteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroRemoteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A1000023232D8F0000000001 /* RetroRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1000024232D8F0000000001 /* RetroRemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetroRemoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1000025232D8F0000000001 /* RetroRemoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetroRemoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1000026232D8F0000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1000027232D8F0000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1000028232D8F0000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1000029232D8F0000000001 = {
+			isa = PBXGroup;
+			children = (
+				A100002A232D8F0000000001 /* RetroRemote */,
+				A100002B232D8F0000000001 /* RetroRemoteTests */,
+				A100002C232D8F0000000001 /* RetroRemoteUITests */,
+				A100002D232D8F0000000001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A100002A232D8F0000000001 /* RetroRemote */ = {
+			isa = PBXGroup;
+			children = (
+				A1000002232D8F0000000001 /* RetroRemoteApp.swift */,
+				A1000004232D8F0000000001 /* ContentView.swift */,
+				A100002E232D8F0000000001 /* Models */,
+				A100002F232D8F0000000001 /* Views */,
+				A1000030232D8F0000000001 /* Services */,
+				A1000031232D8F0000000001 /* Utilities */,
+				A1000006232D8F0000000001 /* Assets.xcassets */,
+				A1000032232D8F0000000001 /* Preview Content */,
+			);
+			path = RetroRemote;
+			sourceTree = "<group>";
+		};
+		A100002B232D8F0000000001 /* RetroRemoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				A100001A232D8F0000000001 /* RetroRemoteTests.swift */,
+			);
+			path = RetroRemoteTests;
+			sourceTree = "<group>";
+		};
+		A100002C232D8F0000000001 /* RetroRemoteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A100001C232D8F0000000001 /* RetroRemoteUITests.swift */,
+				A100001E232D8F0000000001 /* RetroRemoteUITestsLaunchTests.swift */,
+			);
+			path = RetroRemoteUITests;
+			sourceTree = "<group>";
+		};
+		A100002D232D8F0000000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1000023232D8F0000000001 /* RetroRemote.app */,
+				A1000024232D8F0000000001 /* RetroRemoteTests.xctest */,
+				A1000025232D8F0000000001 /* RetroRemoteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A100002E232D8F0000000001 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A100000A232D8F0000000001 /* TVDevice.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A100002F232D8F0000000001 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A1000016232D8F0000000001 /* RemoteControlView.swift */,
+				A1000018232D8F0000000001 /* DevicePickerView.swift */,
+				A1000033232D8F0000000001 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A1000030232D8F0000000001 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A100000C232D8F0000000001 /* NetworkDiscoveryService.swift */,
+				A100000E232D8F0000000001 /* TVControlService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A1000031232D8F0000000001 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A1000010232D8F0000000001 /* HapticManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A1000032232D8F0000000001 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A1000008232D8F0000000001 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A1000033232D8F0000000001 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A1000012232D8F0000000001 /* SkeuomorphicButton.swift */,
+				A1000014232D8F0000000001 /* DPadView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1000021232D8F0000000001 /* RetroRemote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1000034232D8F0000000001 /* Build configuration list for PBXNativeTarget "RetroRemote" */;
+			buildPhases = (
+				A1000035232D8F0000000001 /* Sources */,
+				A1000026232D8F0000000001 /* Frameworks */,
+				A1000036232D8F0000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RetroRemote;
+			productName = RetroRemote;
+			productReference = A1000023232D8F0000000001 /* RetroRemote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1000037232D8F0000000001 /* RetroRemoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1000038232D8F0000000001 /* Build configuration list for PBXNativeTarget "RetroRemoteTests" */;
+			buildPhases = (
+				A1000039232D8F0000000001 /* Sources */,
+				A1000027232D8F0000000001 /* Frameworks */,
+				A100003A232D8F0000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A100003B232D8F0000000001 /* PBXTargetDependency */,
+			);
+			name = RetroRemoteTests;
+			productName = RetroRemoteTests;
+			productReference = A1000024232D8F0000000001 /* RetroRemoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A100003C232D8F0000000001 /* RetroRemoteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A100003D232D8F0000000001 /* Build configuration list for PBXNativeTarget "RetroRemoteUITests" */;
+			buildPhases = (
+				A100003E232D8F0000000001 /* Sources */,
+				A1000028232D8F0000000001 /* Frameworks */,
+				A100003F232D8F0000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1000040232D8F0000000001 /* PBXTargetDependency */,
+			);
+			name = RetroRemoteUITests;
+			productName = RetroRemoteUITests;
+			productReference = A1000025232D8F0000000001 /* RetroRemoteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1000020232D8F0000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A1000021232D8F0000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					A1000037232D8F0000000001 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = A1000021232D8F0000000001;
+					};
+					A100003C232D8F0000000001 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = A1000021232D8F0000000001;
+					};
+				};
+			};
+			buildConfigurationList = A1000041232D8F0000000001 /* Build configuration list for PBXProject "RetroRemote" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1000029232D8F0000000001;
+			productRefGroup = A100002D232D8F0000000001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1000021232D8F0000000001 /* RetroRemote */,
+				A1000037232D8F0000000001 /* RetroRemoteTests */,
+				A100003C232D8F0000000001 /* RetroRemoteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1000036232D8F0000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000007232D8F0000000001 /* Preview Assets.xcassets in Resources */,
+				A1000005232D8F0000000001 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A100003A232D8F0000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A100003F232D8F0000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1000035232D8F0000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000003232D8F0000000001 /* ContentView.swift in Sources */,
+				A1000001232D8F0000000001 /* RetroRemoteApp.swift in Sources */,
+				A1000009232D8F0000000001 /* TVDevice.swift in Sources */,
+				A100000B232D8F0000000001 /* NetworkDiscoveryService.swift in Sources */,
+				A100000D232D8F0000000001 /* TVControlService.swift in Sources */,
+				A100000F232D8F0000000001 /* HapticManager.swift in Sources */,
+				A1000011232D8F0000000001 /* SkeuomorphicButton.swift in Sources */,
+				A1000013232D8F0000000001 /* DPadView.swift in Sources */,
+				A1000015232D8F0000000001 /* RemoteControlView.swift in Sources */,
+				A1000017232D8F0000000001 /* DevicePickerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1000039232D8F0000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000019232D8F0000000001 /* RetroRemoteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A100003E232D8F0000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A100001B232D8F0000000001 /* RetroRemoteUITests.swift in Sources */,
+				A100001D232D8F0000000001 /* RetroRemoteUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A100003B232D8F0000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1000021232D8F0000000001 /* RetroRemote */;
+			targetProxy = A100001F232D8F0000000001 /* PBXContainerItemProxy */;
+		};
+		A1000040232D8F0000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1000021232D8F0000000001 /* RetroRemote */;
+			targetProxy = A1000022232D8F0000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A1000042232D8F0000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1000043232D8F0000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1000044232D8F0000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RetroRemote/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBonjourServices = "_roku._tcp,_samsung._tcp,_airplay._tcp,_lgssdp._tcp,_webos._tcp";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "RetroRemote needs access to your local network to discover and control smart TVs.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haplo.RetroRemote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1000045232D8F0000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RetroRemote/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBonjourServices = "_roku._tcp,_samsung._tcp,_airplay._tcp,_lgssdp._tcp,_webos._tcp";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "RetroRemote needs access to your local network to discover and control smart TVs.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haplo.RetroRemote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A1000046232D8F0000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haplo.RetroRemoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RetroRemote.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RetroRemote";
+			};
+			name = Debug;
+		};
+		A1000047232D8F0000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haplo.RetroRemoteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RetroRemote.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RetroRemote";
+			};
+			name = Release;
+		};
+		A1000048232D8F0000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haplo.RetroRemoteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RetroRemote;
+			};
+			name = Debug;
+		};
+		A1000049232D8F0000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haplo.RetroRemoteUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RetroRemote;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1000034232D8F0000000001 /* Build configuration list for PBXNativeTarget "RetroRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1000044232D8F0000000001 /* Debug */,
+				A1000045232D8F0000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1000038232D8F0000000001 /* Build configuration list for PBXNativeTarget "RetroRemoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1000046232D8F0000000001 /* Debug */,
+				A1000047232D8F0000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A100003D232D8F0000000001 /* Build configuration list for PBXNativeTarget "RetroRemoteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1000048232D8F0000000001 /* Debug */,
+				A1000049232D8F0000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1000041232D8F0000000001 /* Build configuration list for PBXProject "RetroRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1000042232D8F0000000001 /* Debug */,
+				A1000043232D8F0000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1000020232D8F0000000001 /* Project object */;
+}
