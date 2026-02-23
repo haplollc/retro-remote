@@ -4,7 +4,7 @@ struct ContentView: View {
     @EnvironmentObject var controlService: TVControlService
     
     var body: some View {
-        RemoteControlView(controlService: controlService)
+        Win95RemoteControlView(controlService: controlService)
     }
 }
 

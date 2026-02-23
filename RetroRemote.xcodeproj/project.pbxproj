@@ -22,6 +22,10 @@
 		A1000019232D8F0000000001 /* RetroRemoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100001A232D8F0000000001 /* RetroRemoteTests.swift */; };
 		A100001B232D8F0000000001 /* RetroRemoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100001C232D8F0000000001 /* RetroRemoteUITests.swift */; };
 		A100001D232D8F0000000001 /* RetroRemoteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100001E232D8F0000000001 /* RetroRemoteUITestsLaunchTests.swift */; };
+		A2000001232D8F0000000001 /* Win95Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000002232D8F0000000001 /* Win95Theme.swift */; };
+		A2000003232D8F0000000001 /* Win95Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000004232D8F0000000001 /* Win95Button.swift */; };
+		A2000005232D8F0000000001 /* Win95DPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000006232D8F0000000001 /* Win95DPadView.swift */; };
+		A2000007232D8F0000000001 /* Win95RemoteControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000008232D8F0000000001 /* Win95RemoteControlView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,10 @@
 		A1000023232D8F0000000001 /* RetroRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1000024232D8F0000000001 /* RetroRemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetroRemoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1000025232D8F0000000001 /* RetroRemoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetroRemoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2000002232D8F0000000001 /* Win95Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Win95Theme.swift; sourceTree = "<group>"; };
+		A2000004232D8F0000000001 /* Win95Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Win95Button.swift; sourceTree = "<group>"; };
+		A2000006232D8F0000000001 /* Win95DPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Win95DPadView.swift; sourceTree = "<group>"; };
+		A2000008232D8F0000000001 /* Win95RemoteControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Win95RemoteControlView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +160,7 @@
 			children = (
 				A1000016232D8F0000000001 /* RemoteControlView.swift */,
 				A1000018232D8F0000000001 /* DevicePickerView.swift */,
+				A2000008232D8F0000000001 /* Win95RemoteControlView.swift */,
 				A1000033232D8F0000000001 /* Components */,
 			);
 			path = Views;
@@ -187,6 +196,9 @@
 			children = (
 				A1000012232D8F0000000001 /* SkeuomorphicButton.swift */,
 				A1000014232D8F0000000001 /* DPadView.swift */,
+				A2000002232D8F0000000001 /* Win95Theme.swift */,
+				A2000004232D8F0000000001 /* Win95Button.swift */,
+				A2000006232D8F0000000001 /* Win95DPadView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -331,6 +343,10 @@
 				A1000013232D8F0000000001 /* DPadView.swift in Sources */,
 				A1000015232D8F0000000001 /* RemoteControlView.swift in Sources */,
 				A1000017232D8F0000000001 /* DevicePickerView.swift in Sources */,
+				A2000001232D8F0000000001 /* Win95Theme.swift in Sources */,
+				A2000003232D8F0000000001 /* Win95Button.swift in Sources */,
+				A2000005232D8F0000000001 /* Win95DPadView.swift in Sources */,
+				A2000007232D8F0000000001 /* Win95RemoteControlView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
