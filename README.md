@@ -5,6 +5,7 @@ A beautiful, skeuomorphic TV remote control app for iOS built with SwiftUI. Cont
 ![iOS 17.0+](https://img.shields.io/badge/iOS-17.0+-blue.svg)
 ![SwiftUI](https://img.shields.io/badge/SwiftUI-5.0-orange.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-FFDD00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/jcbuilds)
 
 ## ✨ Features
 
