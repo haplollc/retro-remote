@@ -99,6 +99,8 @@ The app requires local network access to discover and control TVs. When prompted
 
 ```
 RetroRemote/
+├── RetroRemoteApp.swift        # App entry point
+├── ContentView.swift           # Root view, shows the Windows 95 remote
 ├── Models/
 │   └── TVDevice.swift          # TV device model and remote button definitions
 ├── Services/
@@ -108,9 +110,13 @@ RetroRemote/
 │   └── HapticManager.swift     # Haptic feedback management
 └── Views/
     ├── Components/
+    │   ├── Win95Button.swift          # Windows 95 style beveled buttons
+    │   ├── Win95DPadView.swift        # Windows 95 style direction pad
+    │   ├── Win95Theme.swift           # Windows 95 colors, fonts and bevels
     │   ├── SkeuomorphicButton.swift   # Realistic button components
     │   └── DPadView.swift             # Direction pad component
-    ├── RemoteControlView.swift        # Main remote UI
+    ├── Win95RemoteControlView.swift   # Main remote UI (Windows 95 style)
+    ├── RemoteControlView.swift        # Skeuomorphic remote UI (not shown in the app)
     └── DevicePickerView.swift         # TV selection screen
 ```
 
